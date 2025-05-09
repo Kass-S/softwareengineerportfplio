@@ -2,37 +2,25 @@
 
 export default function Home() {
   return (
-    <div>
+    <div className="max-h-[100vh]">
       
-      <div className="mx-10 grid grid-rows-3 grid-cols-3">
+      <div className="max-w-[28rem] m-30">
         <div >
-          <h2 className="text-4xl">Kassandra Spacek</h2>
-          <p>Software Engineer</p>
+          <h2 className="text-4xl my-2">Hi, I’m Kassandra Spacek.</h2>
+          <p className="text-lg mb-10">Junior Software Developer</p>
+          <p>I am a junior software developer currently enrolled in the Codestack Academy program, working mostly in frontend development.</p>
         </div>
 
-        <div className=" row-[2]">
-          <p className="text-xl font-semibold">About Me</p>
-          <p>Hello, I am Kassandra Spacek. </p>
-          <p>I am a software engineer currently enrolled in the Codestack Academy program, working mostly in frontend development.</p>
-        </div>
-
-        <div className="row-[3]">
-        <div className="">
-          
-          <div>
-            <p>
-              Skills snapshot: 
-            </p>
+        <div className="mt-5">
+          <p>
+            Skills snapshot: 
+          </p>
+          <div className="ml-5">
             <p>Languages: TypeScript, JavaScript, C#, Html, Css</p>
             <p>Frameworks: React, Next.js, React Native </p>
           </div>
           
-        </div>
-
-        <div>
-          <p>Projects </p>
-        </div>
-        
+          
         </div>
         
       </div>
