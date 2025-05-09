@@ -1,29 +1,44 @@
 import React from 'react'
 
-const ProjectComponent = () => {
+const ProjectComponent = ({ setProjectsHidden }:{setProjectsHidden: (val: boolean) => void;}) => {
+
+    const handleSwitch = () => {
+        setProjectsHidden(true);
+    }
+
   return (
-    <div className='min-w-[28rem] max-w-[40rem] m-30  p-4'>
+    <div className='min-w-[28rem] max-w-[30rem] m-30 mb-0  p-4 max-h-screen'>
 
-        <h1 className='text-5xl mb-10'>Recent Projects</h1>
+        <h1 className='text-5xl mb-20'>Recent Projects</h1>
 
-        <div>
+        <div className='grid grid-rows-3'>
             <div className='my-5'>
-                <p>March 2025 - Present</p>
-                <p>Itinera</p>
-                <a href="https://github.com/kcadavos/itinera-io" target='blank' className='underline hover:text-blue-500'>https://github.com/kcadavos/itinera-io</a>
+                <p className='text-xl'>Itinera</p>
+                <div className='ml-5 flex justify-between'>
+                    <p className='mr-5'>March 2025 - Present</p>
+                    <a href="https://github.com/kcadavos/itinera-io" target='blank' className='underline hover:text-blue-500'><button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
+                </div>
             </div>
 
             <div className='my-5'>
-                <p>March 2025</p>
-                <p>Pokemon Search API</p>
-                <a href="https://github.com/Kass-S/pokemon-api" target='blank' className='underline hover:text-blue-500'>https://github.com/Kass-S/pokemon-api</a>
+                <p className='text-xl'>Pokemon Search API</p>
+                <div className='ml-5 flex justify-between'>
+                    <p className='mr-5'>March 2025 - March 2025</p>
+                    <a href="https://github.com/Kass-S/pokemon-api" target='blank' className='underline hover:text-blue-500'><button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
+                </div> 
             </div>
 
             <div className='my-5'>
-                <p>January 2025</p>
-                <p>Rock Paper Scissors Lizard Spock</p>
-                <a href="https://github.com/Kass-S/RPSLSWeb" target='blank' className='underline hover:text-blue-500'>https://github.com/Kass-S/RPSLSWeb</a>
+                <p className='text-xl'>Rock Paper Scissors Lizard Spock</p>
+                <div className='ml-5 flex justify-between'>
+                    <p className='mr-5'>January 2025 - January 2025</p>
+                    <a href="https://github.com/Kass-S/RPSLSWeb" target='blank' className='underline hover:text-blue-500'><button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
+                </div>
             </div>
+
+            <div className="mt-20">
+                <button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-2 px-4 rounded-lg' onClick={handleSwitch}>Back</button>
+                </div>
         </div>
     </div>
   )

@@ -1,9 +1,14 @@
 import React from 'react'
 
-const DeveloperCard = () => {
+const DeveloperCard = ({ setProjectsHidden }:{setProjectsHidden: (val: boolean) => void;}) => {
+
+    const handleSwitch = () => {
+        setProjectsHidden(false);
+    }
+    
   return (
     <div>
-        <div className="min-w-[28rem] max-w-[40rem] m-30  p-4">
+        <div className="min-w-[28rem] max-w-[40rem] m-30 mb-0  p-4">
         <div >
           <h2 className="text-4xl my-2">Hi, I’m Kassandra Spacek.</h2>
           <p className="text-lg mb-10">Junior Software Developer</p>
@@ -21,7 +26,7 @@ const DeveloperCard = () => {
         </div>
 
         <div className="mt-5">
-          <button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>Projects</button>
+          <button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg' onClick={handleSwitch}>Projects</button>
         </div>
 
         <div className='mt-10'>
@@ -43,12 +48,6 @@ const DeveloperCard = () => {
             </div>
         </div>
 
-      
-      {/* 
-          Phone Number
-          Email
-          Links to LinkedIn, GitHub, and Resume */}
-        
       </div>
     </div>
   )

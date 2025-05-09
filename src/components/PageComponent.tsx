@@ -7,13 +7,11 @@ import ProjectComponent from './ProjectComponent';
 const PageComponent = () => {
     const [projectsHidden, setProjectsHidden] = useState<boolean>(false);
 
-    const handleSwitch = () => {
-        setProjectsHidden(!projectsHidden);
-      }
+    
   return (
     <div>
         {
-            projectsHidden ? <DeveloperCard /> : <ProjectComponent />
+            projectsHidden ? <DeveloperCard setProjectsHidden={setProjectsHidden} /> : <ProjectComponent setProjectsHidden={setProjectsHidden} />
         }
     </div>
   )
