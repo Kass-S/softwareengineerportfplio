@@ -8,10 +8,6 @@ export default function Home() {
       
       <PageComponent />
       
-      {/* 
-          Phone Number
-          Email
-          Links to LinkedIn, GitHub, and Resume */}
     </div>
     
   );

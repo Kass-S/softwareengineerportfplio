@@ -21,8 +21,33 @@ const DeveloperCard = () => {
         </div>
 
         <div className="mt-5">
-          <button className='bg-blue-500 hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>Projects</button>
+          <button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>Projects</button>
         </div>
+
+        <div className='mt-10'>
+            <p className='text-lg mb-3'>Find Me:</p>
+            <a href="https://github.com/Kass-s" target="_blank" className='mb-2'>GitHub</a>
+            <a href="https://www.linkedin.com/in/kassanrda-spacek-519078364/" target="_blank" className='mb-2'>LinkedIn</a>
+            <p className='mb-2'>Email me: KassandraSpacek@Gmail.com</p>
+            <div className="flex justify-center md:justify-start">
+                <a
+                href="/KassandraSpacekResume.pdf"
+                download="KassandraSpacekResume.pdf"
+                >
+                <button className="px-4 py-1 rounded-lg bg-blue-500 text-black hover:bg-blue-800 hover:text-white">
+                    <span className="block rounded-lg">
+                    Download Resume
+                    </span>
+                </button>
+                </a>
+            </div>
+        </div>
+
+      
+      {/* 
+          Phone Number
+          Email
+          Links to LinkedIn, GitHub, and Resume */}
         
       </div>
     </div>
