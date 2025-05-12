@@ -5,7 +5,7 @@ import DeveloperCard from './DeveloperCard'
 import ProjectComponent from './ProjectComponent';
 
 const PageComponent = () => {
-    const [projectsHidden, setProjectsHidden] = useState<boolean>(false);
+    const [projectsHidden, setProjectsHidden] = useState<boolean>(true);
 
     
   return (
