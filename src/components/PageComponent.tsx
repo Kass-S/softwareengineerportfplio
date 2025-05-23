@@ -9,7 +9,7 @@ const PageComponent = () => {
 
     
   return (
-    <div className='border-l-8 border-blue-800 '>
+    <div className='border-l-8 border-red-800 '>
         {
             projectsHidden ? <DeveloperCard setProjectsHidden={setProjectsHidden} /> : <ProjectComponent setProjectsHidden={setProjectsHidden} />
         }

@@ -16,7 +16,7 @@ const ProjectComponent = ({ setProjectsHidden }:{setProjectsHidden: (val: boolea
                 <p className='text-xl'>Itinera</p>
                 <div className='ml-5 flex justify-between'>
                     <p className='mr-5'>March 2025 - Present</p>
-                    <a href="https://github.com/kcadavos/itinera-io" target='blank' className='underline hover:text-blue-500'><button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
+                    <a href="https://github.com/kcadavos/itinera-io" target='blank' className='underline hover:text-red-500'><button className=' bg-red-500 text-black hover:bg-red-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
                 </div>
             </div>
 
@@ -24,7 +24,7 @@ const ProjectComponent = ({ setProjectsHidden }:{setProjectsHidden: (val: boolea
                 <p className='text-xl '>Pokemon Search API</p>
                 <div className='ml-5 flex justify-between'>
                     <p className='mr-5'>March 2025 - March 2025</p>
-                    <a href="https://github.com/Kass-S/pokemon-api" target='blank' className='underline hover:text-blue-500'><button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
+                    <a href="https://github.com/Kass-S/pokemon-api" target='blank' className='underline hover:text-red-500'><button className=' bg-red-500 text-black hover:bg-red-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
                 </div> 
             </div>
 
@@ -32,12 +32,12 @@ const ProjectComponent = ({ setProjectsHidden }:{setProjectsHidden: (val: boolea
                 <p className='text-xl'>Rock Paper Scissors Lizard Spock</p>
                 <div className='ml-5 flex justify-between'>
                     <p className='mr-5'>January 2025 - January 2025</p>
-                    <a href="https://github.com/Kass-S/RPSLSWeb" target='blank' className='underline hover:text-blue-500'><button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
+                    <a href="https://github.com/Kass-S/RPSLSWeb" target='blank' className='underline hover:text-red-500'><button className=' bg-red-500 text-black hover:bg-red-800 hover:text-white cursor-pointer p-1 px-4 rounded-lg'>GitHub</button></a>
                 </div>
             </div>
 
             <div className="mt-20 ">
-                <button className=' bg-blue-500 text-black hover:bg-blue-800 hover:text-white cursor-pointer p-2 px-4 rounded-lg' onClick={handleSwitch}>Back</button>
+                <button className=' bg-red-500 text-black hover:bg-red-800 hover:text-white cursor-pointer p-2 px-4 rounded-lg' onClick={handleSwitch}>Back</button>
             </div>
         </div>
     </div>
