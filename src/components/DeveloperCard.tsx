@@ -16,7 +16,7 @@ const DeveloperCard = ({ setProjectsHidden }:{setProjectsHidden: (val: boolean) 
         </div>
 
         <div className="mt-5 p-1">
-          <p className="my-5">I am a junior software developer currently enrolled in the Codestack Academy program, working mostly in frontend development.</p>
+          <p className="my-5">I am a junior software developer currently working mostly in frontend development for an internship position at Codestack.</p>
           <p>
             Skills snapshot: 
           </p>
@@ -45,16 +45,16 @@ const DeveloperCard = ({ setProjectsHidden }:{setProjectsHidden: (val: boolean) 
                 
                 
                 <div className="flex justify-end ">
-                    <a
+                    {/* <a
                     href="/KassandraSpacekResume.pdf"
                     download="KassandraSpacekResume.pdf"
-                    >
+                    > */}
                     <button className="px-4 py-1 rounded-lg bg-red-500 text-black hover:bg-red-800 hover:text-white">
                         <span className="block rounded-lg">
                         Download Resume
                         </span>
                     </button>
-                    </a>
+                    {/* </a> */}
                 </div>
             </div>
             
